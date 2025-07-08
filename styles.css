@@ -439,21 +439,21 @@ aside {
     font-size: 20px;
     text-align: left;
     margin-top: 15%;
-    margin-left: 10%;
+    margin-left: 6%;
   }
 
   main p {
     font-size: 14px;
     margin-top: 20%;
     padding: 0 5px;
-    margin-left: 10%;
+    margin-left: 5%;
   }
 
   .btn-call,
   .btn-request {
     width: auto;
     margin-top: 15%;
-    margin-left: 7%;
+    margin-left: 9%;
   }
 
   h2 {
