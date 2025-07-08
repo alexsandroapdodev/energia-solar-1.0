@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+}
+
+body {
+  background-color: #1e1e1e;
+}
+
+header {
+  width: 1440px;
+  height: 86px;
+  background-color: #1092cf;
+  display: flex;
+}
+
+.img-logo {
+  width: 157px;
+  height: 54px;
+  margin-left: 150px;
+  margin-top: 16px;
+  color: transparent;
+}
+
+button {
+  width: 109px;
+  height: 38px;
+  margin-top: 24px;
+  margin-left: 8px;
+  background-color: #1092cf;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.btn-one {
+  width: 110px;
+  height: 38px;
+  margin-left: 96.67px;
+  background-color: rgb(34, 102, 222);
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-bottom: 0.5px solid rgb(104, 169, 244);
+  box-shadow: 0 4px 0 rgb(55, 133, 234);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-one:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-one:active {
+  filter: brightness(0.95);
+  transform: translateY(1px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+  border-bottom: 1.5px solid rgb(34, 102, 222);
+}
+
+main {
+  width: 1442px;
+  height: 650px;
+  background-image: url("img/painel-solar.jpg");
+  background-repeat: no-repeat;
+}
+
+.progresso {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 150px;
+}
+
+.numero {
+  margin-top: 69px;
+  margin-right: 32.51px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.barra {
+  margin-top: 69px;
+  width: 220.59px;
+  height: 5px;
+  background: linear-gradient(to right, #ffffff 45%, #575757 45%);
+  border-radius: 5px;
+}
+
+.main {
+  margin-top: 81.23px;
+  margin-left: 150px;
+  width: 729px;
+  height: 305px;
+}
+
+h1 {
+  font-size: 52px;
+  color: #ffffff;
+  letter-spacing: -2%;
+}
+
+p {
+  margin-top: 24px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.btn-call {
+  width: 173px;
+  height: 41px;
+  background-color: #20af24;
+  color: #ffffff;
+  border: none;
+  border-radius: 109px;
+  transition: all 0.3s ease;
+  position: relative;
+  top: 5px;
+  left: -9px;
+}
+
+.btn-call:hover {
+  opacity: 0.5;
+}
+
+.btn-request {
+  width: 208px;
+  height: 41px;
+  border-radius: 109px;
+  background-color: #fffe33;
+  color: #2a3334;
+  border: none;
+  transition: all 0.3s ease;
+  position: relative;
+  top: 5px;
+}
+
+.btn-request:hover {
+  opacity: 0.5;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.2;
+  min-width: 120px;
+  margin-left: 280px;
+}
+
+section {
+  width: 1440px;
+  height: 712px;
+  background-color: #ffffff;
+}
+
+h2 {
+  padding-top: 80px;
+  padding-left: 150px;
+  font-size: 42px;
+  white-space: nowrap;
+}
+
+.container-solar {
+  display: inline-block;
+  width: 594px;
+  height: 476px;
+}
+
+.paragrafo-solar {
+  display: inline-block;
+  color: #475467;
+  padding-top: 24px;
+  padding-left: 150px;
+}
+
+.container-solar {
+  display: flex;
+  align-items: flex-start; /* Alinha topo da imagem com o texto */
+  justify-content: space-between; /* Espaço entre texto e imagem */
+  gap: 40px; /* Espaço entre os dois */
+}
+
+.texto-solar {
+  flex: 1; /* Texto ocupa espaço flexível */
+}
+
+.energia-solar {
+  margin-top: 80px;
+  margin-left: 23px;
+  max-width: 400px; /* Tamanho máximo da imagem */
+  width: 100%; /* Para ser responsiva dentro do max-width */
+  height: auto;
+}
+
+span {
+  color: #84bd3a;
+}
+
+.paragrafo-solar-2 {
+  color: #101828;
+}
+
+.info-solar {
+  margin-top: 50px;
+}
+
+.item-lista {
+  margin-left: 150px;
+  display: flex;
+  align-items: center; /* Alinha verticalmente no meio */
+  gap: 12px; /* Espaço entre span e p */
+  margin-bottom: 12px; /* Espaço entre linhas */
+}
+
+.item-lista span {
+  width: 40px; /* largura fixa para alinhar os números */
+  font-weight: bold;
+  color: #0b9586; /* cor que preferir */
+}
+
+.item-lista p {
+  flex: 1; /* ocupa o resto do espaço disponível */
+  margin: 0; /* remove margem padrão */
+}
+
+article {
+  width: 1440px;
+  height: 505px;
+  background-image: url(./img/energia-limpa.jpg);
+}
+
+h3 {
+  padding-top: 147.5px;
+  margin-left: 150px;
+  color: #000;
+  font-size: 42px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.btn-today {
+  width: 173px;
+  height: 41px;
+
+  color: #000;
+  background-color: #fffe33;
+  border-radius: 109px;
+  margin-left: 150px;
+}
+
+.btn-today:hover {
+  opacity: 0.5; /* Diminui a opacidade ao passar o mouse */
+}
+
+.paragrafo-solar-3 {
+  margin-left: 150px;
+  color: #000;
+}
+
+.kits-container {
+  display: flex;
+  margin-left: 150px;
+  gap: 30px; /* espaçamento horizontal */
+  margin-top: 20px;
+}
+
+.kit {
+  display: flex;
+  flex-direction: column; /* imagem, título e texto em coluna */
+  align-items: center;
+  text-align: center;
+
+  width: 358.67px;
+  height: 454px;
+}
+
+.paragrafo-solar-4 {
+  padding-left: 50px;
+  color: #000;
+}
+
+.info-rede {
+  color: #000;
+  font-weight: bold;
+}
+
+.info-net {
+  color: #000;
+}
+
+.kit img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.kit p:first-of-type {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.kit a {
+  margin-top: 8px;
+  text-decoration: none;
+  color: #0b9586;
+  font-weight: bold;
+}
+
+aside {
+  background-color: #ffffff;
+  width: 1442px;
+  height: 712px;
+}
+
+.box-01 {
+  padding-top: 80px;
+  padding-left: 550px;
+}
+
+.solar-kits {
+  color: #000;
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.container-primary {
+  width: 1440px;
+  height: 502px;
+  background-image: url(./img/reparos.png);
+  background-repeat: no-repeat;
+}
+
+.container-secondary {
+  width: 1440px;
+  height: 1022px;
+  background-color: rgb(255, 251, 243);
+}
+
+.container-terceiro {
+  padding-top: 80px;
+  padding-left: 150px;
+  width: 358.67px;
+  height: 337px;
+}
+
+.paragrafo-solar-5 {
+  color: #101828;
+}
+
+.paragrafo-solar-6 {
+  color: #475467;
+}
+
+.container-quarto {
+  width: 358.67px;
+  height: 418px;
+  border: 1px solid #3cab90;
+}
