@@ -388,6 +388,11 @@ aside {
 }
 
 @media (max-width: 768px) {
+  body,
+  html {
+    overflow-x: hidden; /* previne rolagem lateral */
+  }
+
   header {
     max-width: 100%;
     height: 100px;
@@ -455,5 +460,41 @@ aside {
     margin-top: 100px;
     margin-left: 30px;
     margin-right: 5px;
+  }
+
+  h2 {
+    font-size: 15px;
+    text-align: left;
+    margin: 20px 0 10px 15px; /* Top / Right / Bottom / Left */
+    padding: 0;
+  }
+
+  .paragrafo-solar {
+    font-size: 15px;
+    padding: 0;
+  }
+
+  .info-solar {
+    margin-left: 0px;
+    font-size: 10px;
+  }
+
+  .container-solar {
+    margin-left: 0;
+    flex-direction: column; /* coloca imagem e texto um abaixo do outro */
+    padding: 0 15px;
+    gap: 20px; /* espaço entre os itens */
+  }
+
+  .texto-solar {
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .energia-solar {
+    margin: 0 auto;
+    max-width: 100%;
   }
 }
