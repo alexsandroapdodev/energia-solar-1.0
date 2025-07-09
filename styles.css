@@ -11,7 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-/* HEADER */
 header {
   width: 100%;
   max-width: 1539px;
@@ -72,7 +71,6 @@ button:hover {
   border-bottom: 1.5px solid rgb(34, 102, 222);
 }
 
-/* MAIN */
 main {
   height: 650px;
   background-image: url("img/painel-solar.jpg");
@@ -172,10 +170,16 @@ p {
   position: relative;
   top: 5px;
   cursor: pointer;
+  margin-top: 100px;
 }
 
 .btn-request:hover {
   opacity: 0.5;
+}
+
+.controls {
+  margin-top: 100px;
+  margin-left: 130px;
 }
 
 .contact {
@@ -188,8 +192,6 @@ p {
   min-width: 120px;
   margin-left: 280px;
 }
-
-/* SECTIONS */
 
 section {
   height: 712px;
@@ -277,7 +279,7 @@ span {
 h3 {
   padding-top: 147.5px;
   margin-left: 150px;
-  color: #000;
+  color: #ffffff;
   font-size: 42px;
   font-family: "Source Code Pro", monospace;
 }
@@ -288,6 +290,7 @@ h3 {
   color: #000;
   background-color: #fffe33;
   border-radius: 109px;
+  margin-top: 30px;
   margin-left: 150px;
   cursor: pointer;
 }
@@ -298,12 +301,12 @@ h3 {
 
 .paragrafo-solar-3 {
   margin-left: 150px;
-  color: #000;
+  color: #ffffff;
 }
 
 .kits-container {
   display: flex;
-  margin-left: 150px;
+  margin-left: 190px;
   gap: 30px;
   margin-top: 20px;
 }
@@ -363,10 +366,11 @@ h3 {
   padding-left: 550px;
 }
 
-.solar-kits {
+.placas-solares {
   color: #000;
   font-weight: bold;
   font-size: 42px;
+  margin-left: 70px;
 }
 
 .link-whatsapp {
@@ -383,7 +387,6 @@ h3 {
   cursor: pointer;
 }
 
-/* FORMULÁRIO */
 .formulario-fale-conosco {
   max-width: 480px;
   margin: 40px auto;
@@ -444,7 +447,6 @@ h3 {
   background-color: #0a74d0;
 }
 
-/* SOBRE SOLAR */
 .sobre-solar {
   background-image: url(./img/sobre-solar.jpg);
   padding: 60px 20px;
@@ -489,7 +491,6 @@ h3 {
   background-color: #0b78ac;
 }
 
-/* FOOTER */
 footer {
   background-color: #1092cf;
   color: white;
@@ -574,8 +575,6 @@ footer {
   filter: invert(0.5) sepia(1) saturate(5) hue-rotate(100deg);
 }
 
-/* RESPONSIVIDADE */
-
 @media (max-width: 768px) {
   body,
   html {
@@ -652,6 +651,13 @@ footer {
     white-space: normal;
   }
 
+  .placas-solares {
+    margin-left: 0px;
+  }
+
+  .botao-sobre {
+    margin-left: 30px;
+  }
   .container-solar {
     flex-direction: column;
     align-items: center;
@@ -702,12 +708,16 @@ footer {
 
   h3 {
     padding-top: 40px;
-    margin-left: 15px;
+    margin-left: 30px;
     font-size: 20px;
   }
 
+  .paragrafo-solar {
+    padding-left: 0px;
+  }
+
   .btn-today {
-    margin-left: 15px;
+    margin-left: 145px;
     width: auto;
     font-size: 14px;
   }

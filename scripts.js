@@ -32,24 +32,19 @@ const barraPreenchida = document.getElementById("barra-preenchida");
 const title = document.getElementById("slide-title");
 const description = document.getElementById("slide-description");
 
-// Atualiza slide
 function updateSlide() {
   const slide = slides[current];
 
-  // Atualiza imagem de fundo
   main.style.backgroundImage = `url('${slide.image}')`;
 
-  // Atualiza textos
   title.innerHTML = slide.title;
   description.innerHTML = slide.description;
 
-  // Atualiza número e progresso
   numero.textContent = String(current + 1).padStart(2, "0");
   const progress = ((current + 1) / slides.length) * 100;
   barraPreenchida.style.width = `${progress}%`;
 }
 
-// Botões
 document.getElementById("next").addEventListener("click", () => {
   current = (current + 1) % slides.length;
   updateSlide();
@@ -62,13 +57,11 @@ document.getElementById("prev").addEventListener("click", () => {
   restartAutoSlide();
 });
 
-// Slide automático
 let autoSlide = setInterval(() => {
   current = (current + 1) % slides.length;
   updateSlide();
-}, 10000); // Troca a cada 5 segundos
+}, 10000);
 
-// Reinicia o tempo quando clica nos botões
 function restartAutoSlide() {
   clearInterval(autoSlide);
   autoSlide = setInterval(() => {
@@ -77,5 +70,4 @@ function restartAutoSlide() {
   }, 10000);
 }
 
-// Inicializa
 updateSlide();
