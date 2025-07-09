@@ -355,7 +355,7 @@ aside {
 .container-primary {
   width: 1440px;
   height: 502px;
-  background-image: url(./img/reparos.png);
+  background-image: url(./img/reparos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -459,36 +459,174 @@ aside {
   h2 {
     font-size: 15px;
     text-align: left;
-    margin: 20px 0 10px 15px; /* Top / Right / Bottom / Left */
+    margin: 20px 15px 10px 15px; /* Margens laterais para não colar na borda */
     padding: 0;
+    line-height: 1.3;
+    word-break: break-word;
+  }
+
+  .container-solar {
+    flex-direction: column; /* Fica imagem embaixo do texto */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .texto-solar {
+    width: 100%; /* ocupa toda largura disponível */
+    max-width: 100%; /* não ultrapassa */
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  @media (max-width: 768px) {
+    .container-solar,
+    .texto-solar {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 0 15px; /* padding lateral para não colar na borda */
+      box-sizing: border-box; /* importante para contar padding dentro da largura */
+    }
   }
 
   .paragrafo-solar {
     font-size: 15px;
-    padding: 0;
+    margin: 0; /* sem margem para ir à esquerda */
+    padding-left: 0;
+    line-height: 1.4;
+    text-align: left;
+
+    /* Quebra de linha automática para evitar overflow horizontal */
+    overflow-wrap: break-word; /* recomendado */
+    word-wrap: break-word; /* para compatibilidade */
+    word-break: break-word; /* força quebra de palavra longa */
+    hyphens: auto; /* opcional, para hifenização em navegadores que suportam */
   }
 
   .info-solar {
-    margin-left: 0px;
-    font-size: 10px;
-  }
-
-  .container-solar {
-    margin-left: 0;
-    flex-direction: column; /* coloca imagem e texto um abaixo do outro */
-    padding: 0 15px;
-    gap: 20px; /* espaço entre os itens */
-  }
-
-  .texto-solar {
-    font-size: 16px;
+    margin: 0 15px;
+    font-size: 12px;
+    line-height: 1.4;
     text-align: left;
-    margin: 0;
-    padding: 0;
+  }
+
+  .info-solar {
+    margin-top: 5%;
   }
 
   .energia-solar {
     margin: 0 auto;
     max-width: 100%;
+    height: auto;
+  }
+
+  .numero,
+  .barra {
+    margin-top: 20px;
+    margin-left: 8%;
+  }
+
+  section {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .item-lista {
+    margin-left: 15px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .item-lista span {
+    width: auto;
+    font-size: 14px;
+  }
+
+  .item-lista p {
+    font-size: 14px;
+  }
+
+  article {
+    height: 300px;
+    background-position: center;
+  }
+
+  h3 {
+    padding-top: 40px;
+    margin-left: 15px;
+    font-size: 20px;
+  }
+
+  .btn-today {
+    margin-left: 15px;
+    width: auto;
+    font-size: 14px;
+  }
+
+  .paragrafo-solar-3 {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  .kits-container {
+    margin-left: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .kit {
+    width: 90%;
+    height: auto;
+  }
+
+  .paragrafo-solar-4 {
+    padding-left: 15px;
+    font-size: 14px;
+  }
+
+  aside {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .box-01 {
+    padding-left: 15px;
+    padding-top: 20px;
+  }
+
+  .solar-kits {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .container-primary {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+  }
+
+  .container-secondary {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-terceiro,
+  .container-quarto {
+    width: 90%;
+    margin: 20px auto;
+    height: auto;
+  }
+
+  .container-terceiro {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
+  .paragrafo-solar-5,
+  .paragrafo-solar-6 {
+    font-size: 14px;
   }
 }
