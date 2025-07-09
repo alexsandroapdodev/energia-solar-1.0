@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Energia Solar</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <img class="img-logo" src="./img/logo.png" alt="img-logo" />
 
       <button class="btn-one">Início</button>
-      <button>Negociar</button>
-      <button>Comprar</button>
+      <button>Sobre</button>
+      <button>Serviço</button>
       <button>Contato</button>
       <div>
         <p class="contact">
@@ -29,56 +31,92 @@
 
     <main>
       <div class="progresso">
-        <span class="numero">01</span>
-        <div class="barra"></div>
+        <span class="numero" id="current-slide">01</span>
+
+        <div class="barra">
+          <div class="barra-preenchida" id="barra-preenchida"></div>
+        </div>
+
         <span class="numero">04</span>
       </div>
+
       <div class="main">
         <h1>Instaladores de painéis solares</h1>
         <p>
-     A energia solar é uma forma de energia renovável que utiliza a luz do sol para gerar eletricidade
+          A energia solar é uma forma de energia renovável que utiliza a luz do
+          sol para gerar eletricidade
           <br />ou calor.
         </p>
         <button class="btn-call">Ligue-nos hoje</button>
-        <button class="btn-request">
-Solicitar retorno</button>
+        <button class="btn-request">Solicitar retorno</button>
+      </div>
+
+      <div class="controls">
+        <button id="prev">Anterior</button>
+        <button id="next">Próximo</button>
       </div>
     </main>
+
+    <section class="sobre-solar">
+      <div class="container-sobre">
+        <img
+          class="img-sobre"
+          src="./img/sobre-nos.jpg"
+          alt="Sobre a empresa"
+        />
+        <div class="texto-sobre">
+          <h2>Sobre a Nossa Missão Solar</h2>
+          <p class="paragrafo-sobre">
+            Somos uma equipe apaixonada por energia limpa e sustentável. Atuamos
+            em todo o Brasil levando soluções em energia solar que transformam
+            lares, empresas e comunidades em espaços mais econômicos e
+            conscientes.
+          </p>
+          <p class="paragrafo-sobre">
+            Nosso compromisso vai além da instalação: oferecemos suporte
+            técnico, acompanhamento personalizado e garantimos máxima eficiência
+            dos sistemas solares instalados.
+          </p>
+          <a href="#contato" class="botao-sobre">Fale Conosco</a>
+        </div>
+      </div>
+    </section>
 
     <section>
       <div class="container-solar">
         <div class="texto-solar">
-          <h2>Os instaladores mais amigáveis<br /> ​​em todo o Brasil</h2>
+          <h2>
+            Os instaladores mais amigáveis<br />
+            ​​em todo o Brasil
+          </h2>
           <p class="paragrafo-solar">
-       O Brasil tem enorme potencial para energia solar, especialmente na região Nordeste. O país tem incentivado a instalação de sistemas fotovoltaicos, e o número de residências e empresas com geração própria de energia solar cresce a cada ano.
+            O Brasil tem enorme potencial para energia solar, especialmente na
+            região Nordeste. O país tem incentivado a instalação de sistemas
+            fotovoltaicos, e o número de residências e empresas com geração
+            própria de energia solar cresce a cada ano.
           </p>
-<div class="info-solar">
-          <div class="item-lista">
-            <span>01/</span>
-            <p class="paragrafo-solar-2">Renovável e inesgotável.
-</p>
-          </div>
+          <div class="info-solar">
+            <div class="item-lista">
+              <span>01/</span>
+              <p class="paragrafo-solar-2">Renovável e inesgotável.</p>
+            </div>
 
-          <div class="item-lista">
-            <span>02/</span>
-            <p class="paragrafo-solar-2">
-              Reduz a conta de luz.
-            </p>
-          </div>
+            <div class="item-lista">
+              <span>02/</span>
+              <p class="paragrafo-solar-2">Reduz a conta de luz.</p>
+            </div>
 
-          <div class="item-lista">
-            <span>03/</span>
-            <p class="paragrafo-solar-2">
-Baixa manutenção.</p>
-          </div>
+            <div class="item-lista">
+              <span>03/</span>
+              <p class="paragrafo-solar-2">Baixa manutenção.</p>
+            </div>
 
-          <div class="item-lista">
-            <span>04/</span>
-            <p class="paragrafo-solar-2">
-Sustentável e sem emissão de CO₂.</p>
+            <div class="item-lista">
+              <span>04/</span>
+              <p class="paragrafo-solar-2">Sustentável e sem emissão de CO₂.</p>
+            </div>
           </div>
         </div>
-</div>
         <img
           class="energia-solar"
           src="./img/energia-solar.jpg"
@@ -87,24 +125,25 @@ Sustentável e sem emissão de CO₂.</p>
       </div>
     </section>
 
-    <article>
-      <h3>Converte diretamente a luz solar </h3>
+    <section class="section-painel">
+      <h3>Converte diretamente a luz solar</h3>
       <p class="paragrafo-solar-3">
-      É usada em residências, comércios, indústrias e até em grandes usinas.
-<br />
+        É usada em residências, comércios, indústrias e até em grandes usinas.
+        <br />
         botão abaixo para solicitar um retorno de chamada!
       </p>
-      <button class="btn-today">
-Ligue-nos hoje</button>
-    </article>
+      <button class="btn-today">Ligue-nos hoje</button>
+    </section>
 
-    <aside>
+    <section class="section-info">
       <div class="box-01">
-      <p class="solar-kits">Kits Solares</p>
-     
-        </div>
-         <p class="paragrafo-solar-4">
-Soluções completas de energia solar, prontas para instalação. Perfeitas para quem busca ampliar a autonomia energética de sua casa, seja conectada à rede elétrica, totalmente independente ou em um modelo híbrido que combina o melhor dos dois mundos.
+        <p id="kit-solares" class="solar-kits">Kits Solares</p>
+      </div>
+      <p class="paragrafo-solar-4">
+        Soluções completas de energia solar, prontas para instalação. Perfeitas
+        para quem busca ampliar a autonomia energética de sua casa, seja
+        conectada à rede elétrica, totalmente independente ou em um modelo
+        híbrido que combina o melhor dos dois mundos.
       </p>
 
       <div class="kits-container">
@@ -112,127 +151,135 @@ Soluções completas de energia solar, prontas para instalação. Perfeitas para
           <img src="./img/painel-solar-1.jpg" alt="img-off-grid" />
           <p class="info-rede">Autonomia Total</p>
           <p class="info-net">
-           Acreditamos no poder da educação para transformar vidas. Já apoiamos estudantes a alcançarem seus sonhos e vamos continuar iluminando novos caminhos...
+            Acreditamos no poder da educação para transformar vidas. Já apoiamos
+            estudantes a alcançarem seus sonhos e vamos continuar iluminando
+            novos caminhos...
           </p>
-          <a href="#">Ver produtos →</a>
+          <a href="#">Pedir orçamento →</a>
         </div>
 
         <div class="kit">
           <img src=".//img/painel-solar-2.jpg" alt="img-on-grid" />
           <p class="info-rede">Energia Inteligente</p>
           <p class="info-net">
-         
-Impulsionamos talentos a irem além. Já ajudamos estudantes a conquistarem espaços nas empresas que sempre desejaram e seguimos inspirando novas conquistas...
+            Impulsionamos talentos a irem além. Já ajudamos estudantes a
+            conquistarem espaços nas empresas que sempre desejaram e seguimos
+            inspirando novas conquistas...
           </p>
-          <a href="#">Ver produtos →</a>
+          <a href="#">Pedir orçamento →</a>
         </div>
 
         <div class="kit">
           <img src="./img/painel-solar-3.jpg" alt="img-hybrid" />
           <p class="info-rede">Potencial Integrado</p>
           <p class="info-net">
-         Conectamos paixão e propósito. Seguimos abrindo portas para que jovens talentos possam construir futuros brilhantes nas carreiras que escolherem...
+            Conectamos paixão e propósito. Seguimos abrindo portas para que
+            jovens talentos possam construir futuros brilhantes nas carreiras
+            que escolherem...
           </p>
-          <a href="#">Ver produtos →</a>
+          <a href="#">Pedir orçamento →</a>
         </div>
       </div>
-    </aside>
+    </section>
 
-    <section class="container-primary"></section>
+    <form
+      id="contact"
+      class="formulario-fale-conosco"
+      action="https://formcarry.com/s/yrwqlbEbwsJ"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <label
+        >Name<input
+          type="text"
+          name="Nome"
+          placeholder="Enter your Name:"
+          required
+          autofocus
+      /></label>
+      <label
+        >Phone<input
+          type="tel"
+          name="Telefone"
+          placeholder="Enter your Phone Number:"
+      /></label>
+      <label
+        >City<input type="text" name="Cidade" placeholder="Enter your City:"
+      /></label>
+      <label
+        >Neighborhood<input
+          type="text"
+          name="Bairro"
+          placeholder="Enter your Neighborhood:"
+      /></label>
+      <label
+        >Address<input
+          type="text"
+          name="Endereço"
+          placeholder="Enter your Address:"
+      /></label>
+      <label
+        >House Number<input
+          type="number"
+          name="Número da casa"
+          placeholder="Enter your House Number:"
+      /></label>
+      <textarea
+        name="Mensagem"
+        placeholder="Enter your Message Here..."
+      ></textarea>
+      <button type="submit">Request a Quote</button>
+    </form>
 
-        <section class="container-secondary">
-            <div class="container-terceiro">
-                <img src="./img/energia.png" alt="img-energia">
-            <p class="paragrafo-solar-5">Energy Innovators - the products we love</p>
-            <p class="parágrafo-solar-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dignissimos eum laborum doloremque quibusdam praesentium similique magni harum nobis necessitatibus, sapiente nemo porro eius ducimus voluptas repellendus accusamus. Corporis, ea.</p>
-       </div>
+    <a target="_blank" href="https://wa.me/5515996822022" class="link-whatsapp">
+      <img src="./img/whatsapp.png" alt="link of whatsapp" />
+    </a>
 
-            <div class="container-quarto">
-                <p class="paragrafo-solar-5">Solitek - The European Manufacturer of Solar Panels</p>
-                <p class="paragrafo-solar-6">We work closely importing solar panels from Solitek, they offer 30 year warranties on their panels and are constantly coming up with new ideas - including their solar greenhouse.</p>
-                <a>View integration ⟼</a>
-            </div>
-
-             <div class="container-quarto">
-                <p class="paragrafo-solar-5">Sunsynk - No Power No Problem</p>
-                <p class="paragrafo-solar-6">Sunsynk build the most versatile hybrid inverter onthe market, designed to take up to 7kW of solar on a standard domestic supply - for simultaneous battery charging and household usage.</p>
-                <a>View integration ⟼</a>
-            </div>
-
-             <div class="container-quarto">
-                <p class="paragrafo-solar-5">BYD - Electrifying Transport</p>
-                <p class="paragrafo-solar-6">We use battery cells made by BYD, a market leader in lithium batteries. BYD batteries are in cars, trucks, and buses - they build robust batteries.</p>
-                <a>View integration ⟼</a>
-            </div>
-
-            <div class="container-quarto">
-                <p class="paragrafo-solar-5">REC - Solar's Most Trusted</p>
-                <p class="paragrafo-solar-6">REC - Renewable Energy Corporation, are on of the longest trading names in solar. They know how to be truly sustainable in this industry - their panels are 100% lead free and have the most trusted warranty in solar.</p>
-                <a>Vier integration ⟼</a>
-            </div>
-       
-       
-        </section>
-
-        <section>
-            <p></p>
-            <p></p>
-
-            <div>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
-            </div>
-            <div><img src="" alt="">
-            <p></p>
-            <p></p>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo-contact">
+          <img
+            src="./img/logo.png"
+            alt="Logo Energia Solar"
+            class="footer-logo"
+          />
+          <p>
+            © 2025 Energia Solar Brasil<br />
+            Todos os direitos reservados.
+          </p>
+          <p>
+            Contato:<br />
+            <a href="tel:+12345345645">+1 2345 3456 45</a><br />
+            <a href="mailto:contato@energiasolar.com.br"
+              >contato@energiasolar.com.br</a
+            >
+          </p>
         </div>
-        </section>
 
-        <section>
-            <div>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
-            </div>
+        <nav class="footer-nav">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Comprar</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
 
-            <div>
-                <p></p>
-                <input>
-                <p></p>
-                <img>
-                <p></p>
-                <p></p>
-                <img>
-                <img>
-            </div>
-        </section>
-
-        <footer>
-            <div>
-            <img src="" alt="">
-         <a>About</a>
-         <a>Careers</a>
-         <a>Press</a>
-         <a>Customer Care</a>
-        <a>Services</a>
-        <p></p>
-        <input placeholder="Seu endereço de email">
-        <button>Inscrever-se</button>
-        <div></div>
-        <a>Terms & Conditions </a>
-        <a>Privacy Policy</a>
-        <a>Accessibility</a>
-        <a>Legal</a>
-         <p>Nocopyright 2025 - Alexsandro Oliveira</p>
-</div>
-        </footer>
-    </div>
-
+        <div class="footer-social">
+          <h4>Siga-nos</h4>
+          <a href="#" aria-label="Facebook"
+            ><img src="./img/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#" aria-label="Instagram"
+            ><img src="./img/instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#" aria-label="LinkedIn"
+            ><img src="./img/linkedin.svg" alt="LinkedIn"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script src="./scripts.js"></script>
 </html>

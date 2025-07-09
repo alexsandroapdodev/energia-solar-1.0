@@ -13,7 +13,7 @@ body {
 
 header {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1539px;
   margin: 0 auto;
   background-color: #1092cf;
   display: flex;
@@ -76,9 +76,24 @@ main {
   height: 650px;
   background-image: url("img/painel-solar.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1539px;
   margin: 0 auto;
+  position: relative;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.controls button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 .progresso {
@@ -100,8 +115,30 @@ main {
   margin-top: 69px;
   width: 220.59px;
   height: 5px;
-  background: linear-gradient(to right, #ffffff 45%, #575757 45%);
+  background: linear-gradient(to right, #575757 100%, #575757 100%);
   border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.barra-preenchida {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #00ff88;
+  width: 0%; /* começa vazia */
+  transition: width 0.4s;
+  border-radius: 5px;
+}
+
+.barra::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background-color: #00ff88;
+  transition: width 0.4s;
 }
 
 .main {
@@ -173,7 +210,7 @@ section {
   height: 712px;
   background-color: #ffffff;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1539px;
   margin: 0 auto;
 }
 
@@ -199,20 +236,20 @@ h2 {
 
 .container-solar {
   display: flex;
-  align-items: flex-start; /* Alinha topo da imagem com o texto */
-  justify-content: space-between; /* Espaço entre texto e imagem */
-  gap: 40px; /* Espaço entre os dois */
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .texto-solar {
-  flex: 1; /* Texto ocupa espaço flexível */
+  flex: 1;
 }
 
 .energia-solar {
   margin-top: 80px;
   margin-left: 23px;
-  max-width: 400px; /* Tamanho máximo da imagem */
-  width: 100%; /* Para ser responsiva dentro do max-width */
+  max-width: 400px;
+  width: 100%;
   height: auto;
 }
 
@@ -231,29 +268,30 @@ span {
 .item-lista {
   margin-left: 150px;
   display: flex;
-  align-items: center; /* Alinha verticalmente no meio */
-  gap: 12px; /* Espaço entre span e p */
-  margin-bottom: 12px; /* Espaço entre linhas */
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
 .item-lista span {
-  width: 40px; /* largura fixa para alinhar os números */
+  width: 40px;
   font-weight: bold;
-  color: #0b9586; /* cor que preferir */
+  color: #0b9586;
 }
 
 .item-lista p {
-  flex: 1; /* ocupa o resto do espaço disponível */
-  margin: 0; /* remove margem padrão */
+  flex: 1;
+  margin: 0;
 }
 
-article {
+.section-painel {
   height: 505px;
   background-image: url(./img/energia-limpa.jpg);
   background-size: cover;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  max-width: 1539px;
 }
 
 h3 {
@@ -275,7 +313,7 @@ h3 {
 }
 
 .btn-today:hover {
-  opacity: 0.5; /* Diminui a opacidade ao passar o mouse */
+  opacity: 0.5;
 }
 
 .paragrafo-solar-3 {
@@ -286,13 +324,13 @@ h3 {
 .kits-container {
   display: flex;
   margin-left: 150px;
-  gap: 30px; /* espaçamento horizontal */
+  gap: 30px;
   margin-top: 20px;
 }
 
 .kit {
   display: flex;
-  flex-direction: column; /* imagem, título e texto em coluna */
+  flex-direction: column;
   align-items: center;
   text-align: center;
 
@@ -333,11 +371,11 @@ h3 {
   font-weight: bold;
 }
 
-aside {
+.section-info {
   background-color: #ffffff;
   height: 712px;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1539px;
   margin: 0 auto;
 }
 
@@ -352,39 +390,200 @@ aside {
   font-size: 42px;
 }
 
-.container-primary {
-  width: 1440px;
-  height: 502px;
-  background-image: url(./img/reparos.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.link-whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
 }
 
-.container-secondary {
-  width: 1440px;
-  height: 1022px;
-  background-color: rgb(255, 251, 243);
+.link-whatsapp img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  cursor: pointer;
 }
 
-.container-terceiro {
-  padding-top: 80px;
-  padding-left: 150px;
-  width: 358.67px;
-  height: 337px;
+.formulario-fale-conosco {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background-color: #f0f8ff; /* leve azul */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(16, 146, 207, 0.2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.paragrafo-solar-5 {
-  color: #101828;
+.formulario-fale-conosco label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #0a3d62;
+  margin-bottom: 18px;
+  font-size: 14px;
+  gap: 6px;
 }
 
-.paragrafo-solar-6 {
-  color: #475467;
+.formulario-fale-conosco input,
+.formulario-fale-conosco textarea {
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 2px solid #1092cf;
+  border-radius: 8px;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+  font-family: inherit;
 }
 
-.container-quarto {
-  width: 358.67px;
-  height: 418px;
-  border: 1px solid #3cab90;
+.formulario-fale-conosco input:focus,
+.formulario-fale-conosco textarea:focus {
+  border-color: #0a74d0;
+  background-color: #e6f2ff;
+}
+
+.formulario-fale-conosco textarea {
+  min-height: 100px;
+}
+
+.formulario-fale-conosco button {
+  width: 100%;
+  padding: 14px;
+  background-color: #1092cf;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-fale-conosco button:hover {
+  background-color: #0a74d0;
+}
+
+.sobre-solar {
+  background-image: url(./img/sobre-solar.png);
+  padding: 60px 20px;
+}
+.container-sobre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.img-sobre {
+  flex: 1;
+  max-width: 500px;
+  border-radius: 12px;
+}
+.texto-sobre {
+  flex: 1;
+}
+.texto-sobre h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.botao-sobre {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1092cf;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.botao-sobre:hover {
+  background-color: #0b78ac;
+}
+
+footer {
+  background-color: #1092cf;
+  color: white;
+  padding: 40px 20px;
+  font-family: "Source Code Pro", monospace;
+  max-width: 1539px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.footer-container {
+  max-width: 1539px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-logo-contact {
+  flex: 1 1 300px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-logo-contact p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-nav {
+  flex: 1 1 150px;
+}
+
+.footer-nav h4 {
+  margin-bottom: 12px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 8px;
+}
+
+.footer-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-nav ul li a:hover {
+  color: #00ff88;
+}
+
+.footer-social {
+  flex: 1 1 150px;
+}
+
+.footer-social h4 {
+  margin-bottom: 12px;
+}
+
+.footer-social a {
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.footer-social img {
+  width: 24px;
+  filter: invert(1);
+  transition: filter 0.3s;
+}
+
+.footer-social a:hover img {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(100deg);
 }
 
 @media (max-width: 768px) {
@@ -427,12 +626,11 @@ aside {
     margin-left: 8%;
   }
 
-  /** Aqui você zera a margem lateral da .main **/
   .main {
     margin: 0;
-    padding: 0 5px; /* opcional: um leve padding para não grudar demais na borda */
+    padding: 0 5px;
     width: 100%;
-    height: auto; /* deixa a altura crescer conforme o conteúdo */
+    height: auto;
   }
 
   main h1 {
@@ -459,14 +657,14 @@ aside {
   h2 {
     font-size: 15px;
     text-align: left;
-    margin: 20px 15px 10px 15px; /* Margens laterais para não colar na borda */
+    margin: 20px 15px 10px 15px;
     padding: 0;
     line-height: 1.3;
     word-break: break-word;
   }
 
   .container-solar {
-    flex-direction: column; /* Fica imagem embaixo do texto */
+    flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -474,8 +672,8 @@ aside {
   }
 
   .texto-solar {
-    width: 100%; /* ocupa toda largura disponível */
-    max-width: 100%; /* não ultrapassa */
+    width: 100%;
+    max-width: 100%;
     overflow-wrap: break-word;
     word-break: break-word;
   }
@@ -486,23 +684,21 @@ aside {
       width: 100%;
       max-width: 100%;
       margin: 0;
-      padding: 0 15px; /* padding lateral para não colar na borda */
-      box-sizing: border-box; /* importante para contar padding dentro da largura */
+      padding: 0 15px;
+      box-sizing: border-box;
     }
   }
 
   .paragrafo-solar {
     font-size: 15px;
-    margin: 0; /* sem margem para ir à esquerda */
+    margin: 0;
     padding-left: 0;
     line-height: 1.4;
     text-align: left;
-
-    /* Quebra de linha automática para evitar overflow horizontal */
-    overflow-wrap: break-word; /* recomendado */
-    word-wrap: break-word; /* para compatibilidade */
-    word-break: break-word; /* força quebra de palavra longa */
-    hyphens: auto; /* opcional, para hifenização em navegadores que suportam */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
   }
 
   .info-solar {
@@ -548,7 +744,7 @@ aside {
     font-size: 14px;
   }
 
-  article {
+  .section-painel {
     height: 300px;
     background-position: center;
   }
@@ -587,7 +783,7 @@ aside {
     font-size: 14px;
   }
 
-  aside {
+  .section-info {
     height: auto;
     padding: 20px 0;
   }
@@ -628,5 +824,12 @@ aside {
   .paragrafo-solar-5,
   .paragrafo-solar-6 {
     font-size: 14px;
+  }
+
+  @media (max-width: 520px) {
+    .formulario-fale-conosco {
+      margin: 20px 12px;
+      padding: 20px 15px;
+    }
   }
 }
