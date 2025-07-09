@@ -1,15 +1,15 @@
 const slides = [
   {
     image: "img/solar1.jpg",
-    title: "Instaladores de painéis solares",
-    description:
-      "A energia solar é uma forma de energia renovável que utiliza a luz do sol para gerar eletricidade<br />ou calor.",
-  },
-  {
-    image: "img/solar2.jpg",
     title: "Reduza sua conta de energia e pague menos",
     description:
       "Com nossos painéis solares, você pode economizar até 95% na conta de luz e ainda ajudar o <br />meio ambiente.",
+  },
+  {
+    image: "img/solar2.jpg",
+    title: "Instaladores de painéis solares",
+    description:
+      "A energia solar é uma forma de energia renovável que utiliza a luz do sol para gerar eletricidade<br />ou calor.",
   },
   {
     image: "img/solar3.jpg",
