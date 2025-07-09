@@ -1,27 +1,27 @@
 const slides = [
   {
-    image: "img/painel-solar.jpg",
+    image: "img/solar1.jpg",
     title: "Instaladores de painéis solares",
     description:
       "A energia solar é uma forma de energia renovável que utiliza a luz do sol para gerar eletricidade<br />ou calor.",
   },
   {
     image: "img/solar2.jpg",
-    title: "Reduza sua conta de energia",
+    title: "Reduza sua conta de energia e pague menos",
     description:
-      "Com nossos painéis solares, você pode economizar até 95% na conta de luz e ainda ajudar o meio ambiente.",
+      "Com nossos painéis solares, você pode economizar até 95% na conta de luz e ainda ajudar o <br />meio ambiente.",
   },
   {
     image: "img/solar3.jpg",
     title: "Soluções completas para sua casa",
     description:
-      "Oferecemos consultoria, instalação e manutenção para projetos residenciais e comerciais de energia solar.",
+      "Oferecemos consultoria, instalação e manutenção para projetos residenciais e comerciais de <br />energia solar.",
   },
   {
     image: "img/solar4.jpg",
-    title: "Energia limpa e sustentável",
+    title: "Energia limpa e sustentável para seu negócio",
     description:
-      "Contribua para um futuro mais verde com o uso da energia solar em sua residência ou empresa.",
+      "Contribua para um futuro mais verde com o uso da energia solar em sua residência ou<br/> empresa.",
   },
 ];
 
@@ -66,7 +66,7 @@ document.getElementById("prev").addEventListener("click", () => {
 let autoSlide = setInterval(() => {
   current = (current + 1) % slides.length;
   updateSlide();
-}, 5000); // Troca a cada 5 segundos
+}, 10000); // Troca a cada 5 segundos
 
 // Reinicia o tempo quando clica nos botões
 function restartAutoSlide() {
@@ -74,7 +74,7 @@ function restartAutoSlide() {
   autoSlide = setInterval(() => {
     current = (current + 1) % slides.length;
     updateSlide();
-  }, 5000);
+  }, 10000);
 }
 
 // Inicializa

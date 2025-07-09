@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -15,7 +15,7 @@ header {
   width: 100%;
   max-width: 1539px;
   margin: 0 auto;
-  background-color: #1092cf;
+  background-color: #110a70;
   display: flex;
 }
 
@@ -32,7 +32,7 @@ button {
   height: 38px;
   margin-top: 24px;
   margin-left: 8px;
-  background-color: #1092cf;
+  background-color: transparent;
   border: none;
   color: #ffffff;
   cursor: pointer;
@@ -219,6 +219,7 @@ h2 {
   padding-left: 150px;
   font-size: 42px;
   white-space: nowrap;
+  color: #ffffff;
 }
 
 .container-solar {
@@ -465,7 +466,7 @@ h3 {
 }
 
 .sobre-solar {
-  background-image: url(./img/sobre-solar.png);
+  background-image: url(./img/sobre-solar.jpg);
   padding: 60px 20px;
 }
 .container-sobre {
@@ -593,30 +594,40 @@ footer {
   }
 
   header {
-    max-width: 100%;
-    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 100%;
+    height: 80px;
     padding: 0 10px;
     flex-wrap: nowrap;
   }
 
   .img-logo {
     margin-left: 0;
+    margin-top: -40px;
     width: 40px;
     height: 20px;
     flex-shrink: 0;
   }
 
   .btn-one {
-    margin-left: 15px;
+    margin-top: -35px;
+    margin-left: 30px;
     font-size: 15px;
+  }
+
+  .contact-telefone {
+    margin-top: -35px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #fff;
   }
 
   button {
     margin-left: 15px;
-    font-size: 14px;
+    font-size: 15px;
+    margin-top: -40px;
   }
 
   .progresso {
@@ -678,15 +689,13 @@ footer {
     word-break: break-word;
   }
 
-  @media (max-width: 768px) {
-    .container-solar,
-    .texto-solar {
-      width: 100%;
-      max-width: 100%;
-      margin: 0;
-      padding: 0 15px;
-      box-sizing: border-box;
-    }
+  .container-solar,
+  .texto-solar {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
   }
 
   .paragrafo-solar {
@@ -695,21 +704,15 @@ footer {
     padding-left: 0;
     line-height: 1.4;
     text-align: left;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
     word-break: break-word;
     hyphens: auto;
   }
 
   .info-solar {
-    margin: 0 15px;
+    margin: 5% 15px 0 15px;
     font-size: 12px;
     line-height: 1.4;
     text-align: left;
-  }
-
-  .info-solar {
-    margin-top: 5%;
   }
 
   .energia-solar {
@@ -825,11 +828,11 @@ footer {
   .paragrafo-solar-6 {
     font-size: 14px;
   }
+}
 
-  @media (max-width: 520px) {
-    .formulario-fale-conosco {
-      margin: 20px 12px;
-      padding: 20px 15px;
-    }
+@media (max-width: 520px) {
+  .formulario-fale-conosco {
+    margin: 20px 12px;
+    padding: 20px 15px;
   }
 }
